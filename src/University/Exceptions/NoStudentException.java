@@ -1,9 +1,9 @@
-package University;
+package University.Exceptions;
 
 public class NoStudentException extends RuntimeException {
 
     @Override
     public String toString() {
-        return "No Students in group";
+        return "There isn't Students in this group";
     }
 }

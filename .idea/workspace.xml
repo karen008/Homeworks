@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edfa31d6-8de2-437c-8790-4a8ebf3f5789" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/University/NoStudentException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Homework/University/NoStudentException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Homework/University/NoSubjectException.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Homework/University/UniversityMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homework/University/UniversityMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/University/NoStudentException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/University/Exceptions/NoStudentException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/University/NoSubjectException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/University/Exceptions/NoSubjectException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/University/UniversityMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/University/UniversityMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +51,7 @@
       <module name="Homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="University.*" />
+          <option name="PATTERN" value="University.Exceptions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,26 +92,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1578821416747">
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1578827071750">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1578821416747" />
-    <state width="1323" height="187" key="GridCell.Tab.0.bottom" timestamp="1578821878622">
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1578827071750" />
+    <state width="1323" height="437" key="GridCell.Tab.0.bottom" timestamp="1578828016532">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="187" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578821878622" />
-    <state width="1323" height="187" key="GridCell.Tab.0.center" timestamp="1578821878622">
+    <state width="1323" height="437" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578828016532" />
+    <state width="1323" height="437" key="GridCell.Tab.0.center" timestamp="1578828016532">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="187" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578821878622" />
-    <state width="1323" height="187" key="GridCell.Tab.0.left" timestamp="1578821878622">
+    <state width="1323" height="437" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578828016532" />
+    <state width="1323" height="437" key="GridCell.Tab.0.left" timestamp="1578828016532">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="187" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578821878622" />
-    <state width="1323" height="187" key="GridCell.Tab.0.right" timestamp="1578821878622">
+    <state width="1323" height="437" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578828016532" />
+    <state width="1323" height="437" key="GridCell.Tab.0.right" timestamp="1578828016532">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="187" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578821878622" />
+    <state width="1323" height="437" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578828016532" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1578585731337">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -121,9 +124,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="425" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1578743702229" />
-    <state x="-3" y="166" key="run.anything.popup" timestamp="1578737746180">
+    <state x="339" y="162" key="run.anything.popup" timestamp="1578826211259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="-3" y="166" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1578737746180" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1578826211259" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-package University;
+package University.Exceptions;
 
 public class NoSubjectException extends RuntimeException {
     @Override
