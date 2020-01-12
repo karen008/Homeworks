@@ -418,21 +418,6 @@ public class UniversityMain {
                     System.out.println("Enter only numbers");
                 }
 
-               /* System.out.println("Please select the subject");
-                System.out.println("1. Math");
-                System.out.println("2. Physics");
-                System.out.println("3. Cryptography");
-                System.out.println("4. English");
-                System.out.println("5. Russian");
-                System.out.println("6. Armenian");
-                System.out.println("7. Materials Science");
-
-                int subject = 0;
-                try {
-                    subject = sc.nextInt();
-                }catch (InputMismatchException){
-                    System.out.println("Enter only numbers");
-                }*/
 
                 switch (group){
                     case 1:
@@ -482,9 +467,271 @@ public class UniversityMain {
                             marks[i] = mark;
                         }
                         System.out.println("Average mark of " + sub + " for group 'CyberSecurity 1' is " + Setting.AverageCounter(marks));
+                        break;
 
+                    case 2:
+                        System.out.println("Please select the subject");
+                        System.out.println("1. Math");
+                        System.out.println("2. Physics");
+                        System.out.println("3. Cryptography");
+                        System.out.println("4. English");
+
+                        int subject2 = 0;
+                        String sub2 = "";
+                        try {
+                            subject2 = sc.nextInt();
+                        }catch (InputMismatchException e){
+                            System.out.println("Enter only numbers");
+                        }
+
+                        switch (subject2){
+                            case 1:
+                                sub2 = "Math";
+                                break;
+                            case 2:
+                                sub2 = "Physics";
+                                break;
+                            case 3:
+                                sub2 = "Cryptography";
+                                break;
+                            case 4:
+                                sub2 = "English";
+                                break;
+                        }
+
+                        int[] marks2 = new int[3];
+                        String[] students2 = {"FourthStudent", "FifthStudent", "SixthStudent"};
+
+                        for (int i = 0; i < 3; i++) {
+                            System.out.println("Set " + sub2 + " mark for " + students2[i]);
+                            int mark = 0;
+                            try {
+                                mark = sc.nextInt();
+                            }catch (InputMismatchException e){
+                                System.out.println("Enter only numbers");
+                            }
+                            if (mark < 0 || mark > 10) {
+                                throw new MarkException();
+                            }
+                            marks2[i] = mark;
+                        }
+                        System.out.println("Average mark of " + sub2 + " for group 'CyberSecurity 2' is " + Setting.AverageCounter(marks2));
+                        break;
+
+                    case 3:
+                        System.out.println("Please select the subject3");
+                        System.out.println("1. English");
+                        System.out.println("2. Russian");
+                        System.out.println("3. Armenian");
+
+                        int subject3 = 0;
+                        String sub3 = "";
+                        try {
+                            subject3 = sc.nextInt();
+                        }catch (InputMismatchException e){
+                            System.out.println("Enter only numbers");
+                        }
+
+                        switch (subject3){
+                            case 1:
+                                sub3 = "English";
+                                break;
+                            case 2:
+                                sub3 = "Russian";
+                                break;
+                            case 3:
+                                sub3 = "Armenian";
+                                break;
+
+                        }
+
+                        int[] marks3 = new int[3];
+                        String[] students3 = {"SeventhStudent", "EighthStudent", "NinthStudent"};
+
+                        for (int i = 0; i < 3; i++) {
+                            System.out.println("Set " + sub3 + " mark for " + students3[i]);
+                            int mark = 0;
+                            try {
+                                mark = sc.nextInt();
+                            }catch (InputMismatchException e){
+                                System.out.println("Enter only numbers");
+                            }
+                            if (mark < 0 || mark > 10) {
+                                throw new MarkException();
+                            }
+                            marks3[i] = mark;
+                        }
+                        System.out.println("Average mark of " + sub3 + " for group 'Translation 3' is " + Setting.AverageCounter(marks3));
+                        break;
+
+                    case 4:
+                        System.out.println("Please select the subject4");
+                        System.out.println("1. English");
+                        System.out.println("2. Russian");
+                        System.out.println("3. Armenian");
+
+                        int subject4 = 0;
+                        String sub4 = "";
+                        try {
+                            subject4 = sc.nextInt();
+                        }catch (InputMismatchException e){
+                            System.out.println("Enter only numbers");
+                        }
+
+                        switch (subject4){
+                            case 1:
+                                sub4 = "English";
+                                break;
+                            case 2:
+                                sub4 = "Russian";
+                                break;
+                            case 3:
+                                sub4 = "Armenian";
+                                break;
+
+                        }
+
+                        int[] marks4 = new int[3];
+                        String[] students4 = {"TenthStudent", "EleventhStudent", "TwelfthStudent"};
+
+                        for (int i = 0; i < 3; i++) {
+                            System.out.println("Set " + sub4 + " mark for " + students4[i]);
+                            int mark = 0;
+                            try {
+                                mark = sc.nextInt();
+                            }catch (InputMismatchException e){
+                                System.out.println("Enter only numbers");
+                            }
+                            if (mark < 0 || mark > 10) {
+                                throw new MarkException();
+                            }
+                            marks4[i] = mark;
+                        }
+                        System.out.println("Average mark of " + sub4 + " for group 'Translation 4' is " + Setting.AverageCounter(marks4));
+                        break;
+
+                    case 5:
+                        System.out.println("Please select the subject5");
+                        System.out.println("1. Math");
+                        System.out.println("2. Physics");
+                        System.out.println("3. Materials Science");
+                        System.out.println("4. Russian");
+
+                        int subject5 = 0;
+                        String sub5 = "";
+                        try {
+                            subject5 = sc.nextInt();
+                        }catch (InputMismatchException e){
+                            System.out.println("Enter only numbers");
+                        }
+
+                        switch (subject5){
+                            case 1:
+                                sub5 = "Math";
+                                break;
+                            case 2:
+                                sub5 = "Physics";
+                                break;
+                            case 3:
+                                sub5 = "Materials Science";
+                                break;
+                            case 4:
+                                sub5 = "Russian";
+                                break;
+
+
+                        }
+
+                        int[] marks5 = new int[3];
+                        String[] students5 = {"ThirteenthStudent", "FourteenthStudent", "FifteenthStudent"};
+
+                        for (int i = 0; i < 3; i++) {
+                            System.out.println("Set " + sub5 + " mark for " + students5[i]);
+                            int mark = 0;
+                            try {
+                                mark = sc.nextInt();
+                            }catch (InputMismatchException e){
+                                System.out.println("Enter only numbers");
+                            }
+                            if (mark < 0 || mark > 10) {
+                                throw new MarkException();
+                            }
+                            marks5[i] = mark;
+                        }
+                        System.out.println("Average mark of " + sub5 + " for group 'Engineering 5' is " + Setting.AverageCounter(marks5));
+                        break;
+
+                    case 6:
+                        System.out.println("Please select the subject6");
+                        System.out.println("1. Math");
+                        System.out.println("2. Physics");
+                        System.out.println("3. Materials Science");
+                        System.out.println("4. Russian");
+
+                        int subject6 = 0;
+                        String sub6 = "";
+                        try {
+                            subject6 = sc.nextInt();
+                        }catch (InputMismatchException e){
+                            System.out.println("Enter only numbers");
+                        }
+
+                        switch (subject6){
+                            case 1:
+                                sub6 = "Math";
+                                break;
+                            case 2:
+                                sub6 = "Physics";
+                                break;
+                            case 3:
+                                sub6 = "Materials Science";
+                                break;
+                            case 4:
+                                sub6 = "Russian";
+                                break;
+
+
+                        }
+
+                        int[] marks6 = new int[3];
+                        String[] students6 = {"SixteenthStudent", "SeventeenthStudent", "EighteenthStudent"};
+
+                        for (int i = 0; i < 3; i++) {
+                            System.out.println("Set " + sub6 + " mark for " + students6[i]);
+                            int mark = 0;
+                            try {
+                                mark = sc.nextInt();
+                            }catch (InputMismatchException e){
+                                System.out.println("Enter only numbers");
+                            }
+                            if (mark < 0 || mark > 10) {
+                                throw new MarkException();
+                            }
+                            marks6[i] = mark;
+                        }
+                        System.out.println("Average mark of " + sub6 + " for group 'Engineering 6' is " + Setting.AverageCounter(marks6));
+                        break;
+
+                    case 7:
+                        throw new NoStudentException();
 
                 }
+                break;
+
+            case 3:
+                System.out.println("Select the faculty");
+                System.out.println("1. CyberSecurity");
+                System.out.println("2. Translation");
+                System.out.println("3. Engineering");
+
+                int faculty = 0;
+                try {
+                    faculty = sc.nextInt();
+                }catch (InputMismatchException e){
+                    System.out.println("Enter only numbers");
+                }
+
+
         }
     }
 }

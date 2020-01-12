@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edfa31d6-8de2-437c-8790-4a8ebf3f5789" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/University/NoStudentException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/University/UniversityMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Homework/University/UniversityMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Homework/University/UniversityMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/University/UniversityMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/University/UniversityMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,26 +89,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1578751775427">
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1578821416747">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1578751775427" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1578756480011">
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1578821416747" />
+    <state width="1323" height="187" key="GridCell.Tab.0.bottom" timestamp="1578821878622">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578756480011" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1578756480010">
+    <state width="1323" height="187" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1578821878622" />
+    <state width="1323" height="187" key="GridCell.Tab.0.center" timestamp="1578821878622">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578756480010" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1578756480010">
+    <state width="1323" height="187" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1578821878622" />
+    <state width="1323" height="187" key="GridCell.Tab.0.left" timestamp="1578821878622">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578756480010" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1578756480010">
+    <state width="1323" height="187" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1578821878622" />
+    <state width="1323" height="187" key="GridCell.Tab.0.right" timestamp="1578821878622">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578756480010" />
+    <state width="1323" height="187" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1578821878622" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1578585731337">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
