@@ -7,6 +7,8 @@ public class CollectionsStudent implements Comparable<CollectionsStudent> {
     private CollectionsStudent previousStudent;
     private CollectionsStudent nextStudent;
 
+
+    // getters and setters for next and previous students
     public CollectionsStudent getPreviousStudent() {
         return previousStudent;
     }

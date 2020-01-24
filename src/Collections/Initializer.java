@@ -16,6 +16,7 @@ public class Initializer {
         }
     }
 
+    // Print all students
     void showAllStudents() {
         System.out.println(studentsArrayList);
         System.out.println(studentsLinkedList);
