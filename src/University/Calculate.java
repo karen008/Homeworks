@@ -890,7 +890,7 @@ public class Calculate {
 
             case 4:
                 System.out.println("Select the university");
-                System.out.println("1. Main University");
+                System.out.println("1. CollectionMain University");
                 System.out.println("2. Free University");
 
                 int university = 0;
