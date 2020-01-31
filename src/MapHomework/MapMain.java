@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class MapMain {
     public static void main(String[] args) {
+        // Creating list of Students
         ArrayList<MapStudent> arrayListOfMapStudents = new ArrayList<>() {
             {
                 add(new MapStudent("Diana", "Asatryan", 22, "0988111111", "Math"));

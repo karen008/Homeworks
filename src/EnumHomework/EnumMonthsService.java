@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 public class EnumMonthsService {
 
+    // Printing all holidays of month
     public static void printHolidaysOfMonth(EnumMonths month) {
         if (month == null) {
             return;
@@ -13,6 +14,7 @@ public class EnumMonthsService {
         System.out.println();
     }
 
+    // Printing number of days in month
     public static void printNumberOfDaysInMonth(EnumMonths month) {
         if (month == null) {
             return;
@@ -21,6 +23,7 @@ public class EnumMonthsService {
         System.out.println();
     }
 
+    // Printing all months
     public static void printAllMonths(EnumMonths[] months) {
         if (months == null) {
             return;
@@ -31,6 +34,7 @@ public class EnumMonthsService {
         System.out.println();
     }
 
+    // Checking whether day is holiday
     public static boolean checkWhetherDayIsHoliday(int day, EnumMonths month) {
         if (month == null || day > 31 || day < 1) {
             return false;

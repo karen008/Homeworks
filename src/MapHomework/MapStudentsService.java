@@ -20,6 +20,8 @@ public class MapStudentsService {
         }
         return studentsMap;
     }
+
+    // Getting number of students in each faculty
     public static void getNumberOfStudentsInEachFaculty(List<MapStudent> listOfMapStudents) {
         Map<String,Integer> faculties = new HashMap<>();
 
