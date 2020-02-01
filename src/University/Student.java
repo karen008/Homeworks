@@ -1,14 +1,14 @@
 package University;
 
 public class Student extends Group {
-    protected String StudentName;
-    protected int[] Marks;
+    protected String studentName;
+    protected int[] marks;
 
     protected Student(StudentBuilder builder) {
-            StudentName = builder.StudentName;
-            FacultyName = builder.faculty.FacultyName;
-            GroupNumber = builder.GroupNumber;
-            Subjects = builder.faculty.Subjects;
+            studentName = builder.StudentName;
+            facultyName = builder.faculty.facultyName;
+            groupNumber = builder.GroupNumber;
+            subjects = builder.faculty.subjects;
 
     }
 

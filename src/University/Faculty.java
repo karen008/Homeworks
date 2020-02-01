@@ -1,16 +1,16 @@
 package University;
 
 public class Faculty {
-    protected String FacultyName;
-    protected String[] Subjects;
+    protected String facultyName;
+    protected String[] subjects;
 
     public Faculty(){
 
     }
 
     public Faculty(String FacultyName, String[] Subjects){
-        this.FacultyName = FacultyName;
-        this.Subjects = Subjects;
+        this.facultyName = FacultyName;
+        this.subjects = Subjects;
     }
 
 }

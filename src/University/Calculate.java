@@ -1,9 +1,6 @@
 package University;
 
-import University.Exceptions.NoFacultyException;
-import University.Exceptions.NoGroupException;
-import University.Exceptions.NoStudentException;
-import University.Exceptions.NoSubjectException;
+import University.Exceptions.*;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -43,7 +40,6 @@ public class Calculate {
                         System.out.println("1. FirstStudent");
                         System.out.println("2. SecondStudent");
                         System.out.println("3. ThirdStudent");
-                        System.out.println("4. FreeStudent");
                         int Student = 0;
                         try {
                             Student = sc.nextInt();
@@ -53,48 +49,27 @@ public class Calculate {
 
                         switch (Student) {
                             case 1:
-                                String[] Subjects1 = Setting.FirstStudent.Subjects;
+                                String[] Subjects1 = Setting.FirstStudent.subjects;
                                 int[] marks1 = new int[Subjects1.length];
-                                for (int i = 0; i < Subjects1.length; i++) {
-                                    System.out.println("Set mark for " + Subjects1[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks1[i] = mark;
-                                }
+                                SetMarksStudent(Subjects1,marks1);
                                 System.out.println("Average mark of FirstStudent is " + Setting.AverageCounter(marks1));
                                 break;
 
                             case 2:
-                                String[] Subjects2 = Setting.SecondStudent.Subjects;
+                                String[] Subjects2 = Setting.SecondStudent.subjects;
                                 int[] marks2 = new int[Subjects2.length];
-                                for (int i = 0; i < Subjects2.length; i++) {
-                                    System.out.println("Set mark for " + Subjects2[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks2[i] = mark;
-                                }
+                                SetMarksStudent(Subjects2,marks2);
                                 System.out.println("Average mark of SecondStudent is " + Setting.AverageCounter(marks2));
                                 break;
 
                             case 3:
-                                String[] Subjects3 = Setting.ThirdStudent.Subjects;
+                                String[] Subjects3 = Setting.ThirdStudent.subjects;
                                 int[] marks3 = new int[Subjects3.length];
-                                for (int i = 0; i < Subjects3.length; i++) {
-                                    System.out.println("Set mark for " + Subjects3[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks3[i] = mark;
-                                }
+                                SetMarksStudent(Subjects3,marks3);
                                 System.out.println("Average mark of ThirdStudent is " + Setting.AverageCounter(marks3));
                                 break;
 
-                            case 4:
+                            default:
                                 throw new NoSubjectException();
                         }
                         break;
@@ -104,7 +79,6 @@ public class Calculate {
                         System.out.println("1. FourthStudent");
                         System.out.println("2. FifthStudent");
                         System.out.println("3. SixthStudent");
-                        System.out.println("4. FreeStudent");
 
                         int Student2 = 0;
                         try {
@@ -114,48 +88,27 @@ public class Calculate {
                         }
                         switch (Student2) {
                             case 1:
-                                String[] Subjects1 = Setting.FourthStudent.Subjects;
+                                String[] Subjects1 = Setting.FourthStudent.subjects;
                                 int[] marks1 = new int[Subjects1.length];
-                                for (int i = 0; i < Subjects1.length; i++) {
-                                    System.out.println("Set mark for " + Subjects1[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks1[i] = mark;
-                                }
+                                SetMarksStudent(Subjects1,marks1);
                                 System.out.println("Average mark of FourthStudent is " + Setting.AverageCounter(marks1));
                                 break;
 
                             case 2:
-                                String[] Subjects2 = Setting.FifthStudent.Subjects;
+                                String[] Subjects2 = Setting.FifthStudent.subjects;
                                 int[] marks2 = new int[Subjects2.length];
-                                for (int i = 0; i < Subjects2.length; i++) {
-                                    System.out.println("Set mark for " + Subjects2[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks2[i] = mark;
-                                }
+                                SetMarksStudent(Subjects2,marks2);
                                 System.out.println("Average mark of FifthStudent is " + Setting.AverageCounter(marks2));
                                 break;
 
                             case 3:
-                                String[] Subjects3 = Setting.SixthStudent.Subjects;
+                                String[] Subjects3 = Setting.SixthStudent.subjects;
                                 int[] marks3 = new int[Subjects3.length];
-                                for (int i = 0; i < Subjects3.length; i++) {
-                                    System.out.println("Set mark for " + Subjects3[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks3[i] = mark;
-                                }
+                                SetMarksStudent(Subjects3,marks3);
                                 System.out.println("Average mark of SixthStudent is " + Setting.AverageCounter(marks3));
                                 break;
 
-                            case 4:
+                            default:
                                 throw new NoSubjectException();
                         }
                         break;
@@ -165,7 +118,6 @@ public class Calculate {
                         System.out.println("1. SeventhStudent");
                         System.out.println("2. EighthStudent");
                         System.out.println("3. NinthStudent");
-                        System.out.println("4. FreeStudent");
 
                         int Student3 = 0;
                         try {
@@ -175,48 +127,27 @@ public class Calculate {
                         }
                         switch (Student3) {
                             case 1:
-                                String[] Subjects1 = Setting.SeventhStudent.Subjects;
+                                String[] Subjects1 = Setting.SeventhStudent.subjects;
                                 int[] marks1 = new int[Subjects1.length];
-                                for (int i = 0; i < Subjects1.length; i++) {
-                                    System.out.println("Set mark for " + Subjects1[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks1[i] = mark;
-                                }
+                                SetMarksStudent(Subjects1,marks1);
                                 System.out.println("Average mark of SeventhStudent is " + Setting.AverageCounter(marks1));
                                 break;
 
                             case 2:
-                                String[] Subjects2 = Setting.EighthStudent.Subjects;
+                                String[] Subjects2 = Setting.EighthStudent.subjects;
                                 int[] marks2 = new int[Subjects2.length];
-                                for (int i = 0; i < Subjects2.length; i++) {
-                                    System.out.println("Set mark for " + Subjects2[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks2[i] = mark;
-                                }
+                                SetMarksStudent(Subjects2,marks2);
                                 System.out.println("Average mark of EighthStudent is " + Setting.AverageCounter(marks2));
                                 break;
 
                             case 3:
-                                String[] Subjects3 = Setting.NinthStudent.Subjects;
+                                String[] Subjects3 = Setting.NinthStudent.subjects;
                                 int[] marks3 = new int[Subjects3.length];
-                                for (int i = 0; i < Subjects3.length; i++) {
-                                    System.out.println("Set mark for " + Subjects3[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks3[i] = mark;
-                                }
+                                SetMarksStudent(Subjects3,marks3);
                                 System.out.println("Average mark of NinthStudent is " + Setting.AverageCounter(marks3));
                                 break;
 
-                            case 4:
+                            default:
                                 throw new NoSubjectException();
                         }
                         break;
@@ -226,7 +157,6 @@ public class Calculate {
                         System.out.println("1. TenthStudent");
                         System.out.println("2. EleventhStudent");
                         System.out.println("3. TwelfthStudent");
-                        System.out.println("4. FreeStudent");
 
                         int Student4 = 0;
                         try {
@@ -236,48 +166,27 @@ public class Calculate {
                         }
                         switch (Student4) {
                             case 1:
-                                String[] Subjects1 = Setting.TenthStudent.Subjects;
+                                String[] Subjects1 = Setting.TenthStudent.subjects;
                                 int[] marks1 = new int[Subjects1.length];
-                                for (int i = 0; i < Subjects1.length; i++) {
-                                    System.out.println("Set mark for " + Subjects1[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks1[i] = mark;
-                                }
+                                SetMarksStudent(Subjects1,marks1);
                                 System.out.println("Average mark of TenthStudent is " + Setting.AverageCounter(marks1));
                                 break;
 
                             case 2:
-                                String[] Subjects2 = Setting.EleventhStudent.Subjects;
+                                String[] Subjects2 = Setting.EleventhStudent.subjects;
                                 int[] marks2 = new int[Subjects2.length];
-                                for (int i = 0; i < Subjects2.length; i++) {
-                                    System.out.println("Set mark for " + Subjects2[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks2[i] = mark;
-                                }
+                                SetMarksStudent(Subjects2,marks2);
                                 System.out.println("Average mark of EleventhStudent is " + Setting.AverageCounter(marks2));
                                 break;
 
                             case 3:
-                                String[] Subjects3 = Setting.TwelfthStudent.Subjects;
+                                String[] Subjects3 = Setting.TwelfthStudent.subjects;
                                 int[] marks3 = new int[Subjects3.length];
-                                for (int i = 0; i < Subjects3.length; i++) {
-                                    System.out.println("Set mark for " + Subjects3[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks3[i] = mark;
-                                }
+                                SetMarksStudent(Subjects3,marks3);
                                 System.out.println("Average mark of TwelfthStudent is " + Setting.AverageCounter(marks3));
                                 break;
 
-                            case 4:
+                            default:
                                 throw new NoSubjectException();
                         }
                         break;
@@ -287,7 +196,6 @@ public class Calculate {
                         System.out.println("1. ThirteenthStudent");
                         System.out.println("2. FourteenthStudent");
                         System.out.println("3. FifteenthStudent");
-                        System.out.println("4. FreeStudent");
 
                         int Student5 = 0;
                         try {
@@ -297,48 +205,27 @@ public class Calculate {
                         }
                         switch (Student5) {
                             case 1:
-                                String[] Subjects1 = Setting.ThirteenthStudent.Subjects;
+                                String[] Subjects1 = Setting.ThirteenthStudent.subjects;
                                 int[] marks1 = new int[Subjects1.length];
-                                for (int i = 0; i < Subjects1.length; i++) {
-                                    System.out.println("Set mark for " + Subjects1[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks1[i] = mark;
-                                }
+                                SetMarksStudent(Subjects1,marks1);
                                 System.out.println("Average mark of ThirteenthStudent is " + Setting.AverageCounter(marks1));
                                 break;
 
                             case 2:
-                                String[] Subjects2 = Setting.FourteenthStudent.Subjects;
+                                String[] Subjects2 = Setting.FourteenthStudent.subjects;
                                 int[] marks2 = new int[Subjects2.length];
-                                for (int i = 0; i < Subjects2.length; i++) {
-                                    System.out.println("Set mark for " + Subjects2[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks2[i] = mark;
-                                }
+                                SetMarksStudent(Subjects2,marks2);
                                 System.out.println("Average mark of FourteenthStudent is " + Setting.AverageCounter(marks2));
                                 break;
 
                             case 3:
-                                String[] Subjects3 = Setting.FifteenthStudent.Subjects;
+                                String[] Subjects3 = Setting.FifteenthStudent.subjects;
                                 int[] marks3 = new int[Subjects3.length];
-                                for (int i = 0; i < Subjects3.length; i++) {
-                                    System.out.println("Set mark for " + Subjects3[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks3[i] = mark;
-                                }
+                                SetMarksStudent(Subjects3,marks3);
                                 System.out.println("Average mark of FifteenthStudent is " + Setting.AverageCounter(marks3));
                                 break;
 
-                            case 4:
+                            default:
                                 throw new NoSubjectException();
                         }
                         break;
@@ -348,7 +235,6 @@ public class Calculate {
                         System.out.println("1. SixteenthStudent");
                         System.out.println("2. SeventeenthStudent");
                         System.out.println("3. EighteenthStudent");
-                        System.out.println("4. FreeStudent");
 
                         int Student6 = 0;
                         try {
@@ -358,48 +244,27 @@ public class Calculate {
                         }
                         switch (Student6) {
                             case 1:
-                                String[] Subjects1 = Setting.SixteenthStudent.Subjects;
+                                String[] Subjects1 = Setting.SixteenthStudent.subjects;
                                 int[] marks1 = new int[Subjects1.length];
-                                for (int i = 0; i < Subjects1.length; i++) {
-                                    System.out.println("Set mark for " + Subjects1[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks1[i] = mark;
-                                }
+                                SetMarksStudent(Subjects1,marks1);
                                 System.out.println("Average mark of SixteenthStudent is " + Setting.AverageCounter(marks1));
                                 break;
 
                             case 2:
-                                String[] Subjects2 = Setting.SeventeenthStudent.Subjects;
+                                String[] Subjects2 = Setting.SeventeenthStudent.subjects;
                                 int[] marks2 = new int[Subjects2.length];
-                                for (int i = 0; i < Subjects2.length; i++) {
-                                    System.out.println("Set mark for " + Subjects2[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks2[i] = mark;
-                                }
+                                SetMarksStudent(Subjects2,marks2);
                                 System.out.println("Average mark of SeventeenthStudent is " + Setting.AverageCounter(marks2));
                                 break;
 
                             case 3:
-                                String[] Subjects3 = Setting.EighteenthStudent.Subjects;
+                                String[] Subjects3 = Setting.EighteenthStudent.subjects;
                                 int[] marks3 = new int[Subjects3.length];
-                                for (int i = 0; i < Subjects3.length; i++) {
-                                    System.out.println("Set mark for " + Subjects3[i]);
-                                    int mark = sc.nextInt();
-                                    if (mark < 0 || mark > 10) {
-                                        throw new MarkException();
-                                    }
-                                    marks3[i] = mark;
-                                }
+                                SetMarksStudent(Subjects3,marks3);
                                 System.out.println("Average mark of EighteenthStudent is " + Setting.AverageCounter(marks3));
                                 break;
 
-                            case 4:
+                            default:
                                 throw new NoSubjectException();
                         }
                 }
@@ -413,7 +278,6 @@ public class Calculate {
                 System.out.println("4. Translation 4");
                 System.out.println("5. Engineering 5");
                 System.out.println("6. Engineering 6");
-                System.out.println("7. FreeGroup");
 
                 int group = 0;
                 try {
@@ -456,20 +320,7 @@ public class Calculate {
 
                         int[] marks = new int[3];
                         String[] students = {"FirstStudent", "SecondStudent", "ThirdStudent"};
-
-                        for (int i = 0; i < 3; i++) {
-                            System.out.println("Set " + sub + " mark for " + students[i]);
-                            int mark = 0;
-                            try {
-                                mark = sc.nextInt();
-                            } catch (InputMismatchException e) {
-                                System.out.println("Enter only numbers");
-                            }
-                            if (mark < 0 || mark > 10) {
-                                throw new MarkException();
-                            }
-                            marks[i] = mark;
-                        }
+                        SetMarksGroupAndFaculty(sub,students,marks);
                         System.out.println("Average mark of " + sub + " for group 'CyberSecurity 1' is " + Setting.AverageCounter(marks));
                         break;
 
@@ -505,20 +356,7 @@ public class Calculate {
 
                         int[] marks2 = new int[3];
                         String[] students2 = {"FourthStudent", "FifthStudent", "SixthStudent"};
-
-                        for (int i = 0; i < 3; i++) {
-                            System.out.println("Set " + sub2 + " mark for " + students2[i]);
-                            int mark = 0;
-                            try {
-                                mark = sc.nextInt();
-                            } catch (InputMismatchException e) {
-                                System.out.println("Enter only numbers");
-                            }
-                            if (mark < 0 || mark > 10) {
-                                throw new MarkException();
-                            }
-                            marks2[i] = mark;
-                        }
+                        SetMarksGroupAndFaculty(sub2,students2,marks2);
                         System.out.println("Average mark of " + sub2 + " for group 'CyberSecurity 2' is " + Setting.AverageCounter(marks2));
                         break;
 
@@ -551,20 +389,7 @@ public class Calculate {
 
                         int[] marks3 = new int[3];
                         String[] students3 = {"SeventhStudent", "EighthStudent", "NinthStudent"};
-
-                        for (int i = 0; i < 3; i++) {
-                            System.out.println("Set " + sub3 + " mark for " + students3[i]);
-                            int mark = 0;
-                            try {
-                                mark = sc.nextInt();
-                            } catch (InputMismatchException e) {
-                                System.out.println("Enter only numbers");
-                            }
-                            if (mark < 0 || mark > 10) {
-                                throw new MarkException();
-                            }
-                            marks3[i] = mark;
-                        }
+                        SetMarksGroupAndFaculty(sub3,students3,marks3);
                         System.out.println("Average mark of " + sub3 + " for group 'Translation 3' is " + Setting.AverageCounter(marks3));
                         break;
 
@@ -597,20 +422,7 @@ public class Calculate {
 
                         int[] marks4 = new int[3];
                         String[] students4 = {"TenthStudent", "EleventhStudent", "TwelfthStudent"};
-
-                        for (int i = 0; i < 3; i++) {
-                            System.out.println("Set " + sub4 + " mark for " + students4[i]);
-                            int mark = 0;
-                            try {
-                                mark = sc.nextInt();
-                            } catch (InputMismatchException e) {
-                                System.out.println("Enter only numbers");
-                            }
-                            if (mark < 0 || mark > 10) {
-                                throw new MarkException();
-                            }
-                            marks4[i] = mark;
-                        }
+                        SetMarksGroupAndFaculty(sub4,students4,marks4);
                         System.out.println("Average mark of " + sub4 + " for group 'Translation 4' is " + Setting.AverageCounter(marks4));
                         break;
 
@@ -648,20 +460,7 @@ public class Calculate {
 
                         int[] marks5 = new int[3];
                         String[] students5 = {"ThirteenthStudent", "FourteenthStudent", "FifteenthStudent"};
-
-                        for (int i = 0; i < 3; i++) {
-                            System.out.println("Set " + sub5 + " mark for " + students5[i]);
-                            int mark = 0;
-                            try {
-                                mark = sc.nextInt();
-                            } catch (InputMismatchException e) {
-                                System.out.println("Enter only numbers");
-                            }
-                            if (mark < 0 || mark > 10) {
-                                throw new MarkException();
-                            }
-                            marks5[i] = mark;
-                        }
+                        SetMarksGroupAndFaculty(sub5,students5,marks5);
                         System.out.println("Average mark of " + sub5 + " for group 'Engineering 5' is " + Setting.AverageCounter(marks5));
                         break;
 
@@ -699,24 +498,11 @@ public class Calculate {
 
                         int[] marks6 = new int[3];
                         String[] students6 = {"SixteenthStudent", "SeventeenthStudent", "EighteenthStudent"};
-
-                        for (int i = 0; i < 3; i++) {
-                            System.out.println("Set " + sub6 + " mark for " + students6[i]);
-                            int mark = 0;
-                            try {
-                                mark = sc.nextInt();
-                            } catch (InputMismatchException e) {
-                                System.out.println("Enter only numbers");
-                            }
-                            if (mark < 0 || mark > 10) {
-                                throw new MarkException();
-                            }
-                            marks6[i] = mark;
-                        }
+                        SetMarksGroupAndFaculty(sub6,students6,marks6);
                         System.out.println("Average mark of " + sub6 + " for group 'Engineering 6' is " + Setting.AverageCounter(marks6));
                         break;
 
-                    case 7:
+                    default:
                         throw new NoStudentException();
 
                 }
@@ -727,7 +513,6 @@ public class Calculate {
                 System.out.println("1. CyberSecurity");
                 System.out.println("2. Translation");
                 System.out.println("3. Engineering");
-                System.out.println("4. Free faculty");
 
                 int faculty = 0;
                 try {
@@ -883,7 +668,7 @@ public class Calculate {
                         System.out.println("Average mark of " + sub3 + " for faculty 'Engineering' is " + Setting.AverageCounter(marks3));
                         break;
 
-                    case 4:
+                    default:
                         throw new NoGroupException();
                 }
                 break;
@@ -891,7 +676,6 @@ public class Calculate {
             case 4:
                 System.out.println("Select the university");
                 System.out.println("1. Main University");
-                System.out.println("2. Free University");
 
                 int university = 0;
                 try {
@@ -1068,10 +852,39 @@ public class Calculate {
                         }
                         break;
 
-                    case 2:
+                    default:
                         throw new NoFacultyException();
                 }
                 break;
+        }
+    }
+
+    public void SetMarksStudent(String[] subjects, int[] marks){
+        for (int i = 0; i < subjects.length; i++) {
+            System.out.println("Set mark for " + subjects[i]);
+            Scanner sc = new Scanner(System.in);
+            int mark = sc.nextInt();
+            if (mark < 0 || mark > 10) {
+                throw new MarkException();
+            }
+            marks[i] = mark;
+        }
+    }
+
+    public void SetMarksGroupAndFaculty(String sub, String[] students, int[] marks){
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Set " + sub + " mark for " + students[i]);
+            int mark = 0;
+            Scanner sc = new Scanner(System.in);
+            try {
+                mark = sc.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Enter only numbers");
+            }
+            if (mark < 0 || mark > 10) {
+                throw new MarkException();
+            }
+            marks[i] = mark;
         }
     }
 }

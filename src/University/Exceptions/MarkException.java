@@ -1,8 +1,8 @@
-package University;
+package University.Exceptions;
 
 public class MarkException extends RuntimeException{
     @Override
     public String toString() {
-        return "Set Mark 0-10";
+        return super.toString();
     }
 }
