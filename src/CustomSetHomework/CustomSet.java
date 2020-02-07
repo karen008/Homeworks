@@ -1,6 +1,6 @@
 package CustomSetHomework;
 
-public class CustogimSet<T extends Comparable<T>> {
+public class CustomSet<T extends Comparable<T>> {
     private Node root;
 
     class Node {
